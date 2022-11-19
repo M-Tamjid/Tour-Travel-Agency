@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+$blue:#29d9d5;
+$black:#111;
+$white:#fff;
+$light-color:#aaa;
+$bg-color:#222;
+$black-bg:rgba(17,17,17,.7);
+$border:.2rem solid $blue;
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding: 9rem;
+
+  &::-webkit-scrollbar{
+    width:1rem;
+}
+
+&::-webkit-scrollbar-track{
+    background: $black;
+}
+
+&::-webkit-scrollbar-thumb{
+    background: $blue;
+    border-radius: 5rem;
+}
+}
+body{
+  background: $black;
+  overflow-x: hidden;
+}
+.header{
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 10;
+  background: $bg-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 9%;
+  .navbar a{
+    font-size: 1.7rem;
+    color: $light-color;
+    display: inline-block;
+    margin: 0 1rem;
+    &:hover{
+      color: $blues;
+    }
+  }
+}
+.logo{
+  font-size: 2.5rem;
+  color: $white;
+  font-weight: bolder;
+  i{
+    color: $blue;
+    padding-right: .5rem;
+  }
+}
+
